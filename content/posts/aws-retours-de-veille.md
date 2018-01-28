@@ -1,7 +1,6 @@
 ---
 title: "AWS - Retours de veille"
 date: 2017-01-05T07:40:54+01:00
-draft: true
 authors: ["djlechuck"]
 tags: ["api-rest", "aws", "elastic-beanstalk", "swagger"]
 categories: ["veille-et-tests"]

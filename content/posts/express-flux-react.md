@@ -1,7 +1,6 @@
 ---
 title: "Express + Flux + React"
 date: 2017-01-24T16:26:59+01:00
-draft: true
 authors: ["djlechuck"]
 tags: ["express", "flux", "react"]
 categories: ["veille-et-tests"]
