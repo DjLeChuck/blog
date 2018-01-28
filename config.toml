@@ -27,7 +27,7 @@ defaultContentLanguage = "fr"
     favicon = "favicon.ico"
     # customCSS = ["css/custom.css"]
     # customJS = ["js/custom.js"]
-    gopher = "7d8a523ebb9a93774b245362943ef3de367b29b2" # used in 404 template ( Generator: https://gopherize.me )
+    gopher = "https://gopherize.me/gopher/7d8a523ebb9a93774b245362943ef3de367b29b2" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
     prefix = ""
