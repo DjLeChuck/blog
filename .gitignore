@@ -1,2 +1,4 @@
 themes/minimo
 public/
+.firebaserc
+firebase.json
