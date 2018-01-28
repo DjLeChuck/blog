@@ -1,3 +1,7 @@
 [submodule "themes/minimo"]
 	path = themes/minimo
 	url = git@github.com:MunifTanjim/minimo.git
+[submodule "public"]
+	path = public
+	url = git@github.com:djlechuck/djlechuck.github.io.git
+	branch = master
