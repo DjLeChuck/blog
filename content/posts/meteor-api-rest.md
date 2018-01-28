@@ -2,7 +2,7 @@
 title: "Meteor - API REST"
 date: 2017-01-20T08:35:28+01:00
 authors: ["djlechuck"]
-tags: ["api rest", "meteor"]
+tags: ["api-rest", "meteor"]
 categories: ["veille-et-tests"]
 ---
 
