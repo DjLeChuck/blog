@@ -3,7 +3,7 @@ title: "À Propos"
 date: 2017-01-01T00:00:00+01:00
 authors: ["djlechuck"]
 menu: main
-comment: false
+comments: false
 ---
 
 Ce site a pour vocation première de partager l’ensemble des recherches et tests
