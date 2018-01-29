@@ -24,7 +24,7 @@ defaultContentLanguage = "fr"
     title404 = "Ici c'est sûr, il n'y a rien !"
 
 [params.assets]
-    favicon = "favicon.ico"
+    favicon = "favicon-32x32.png"
     # customCSS = ["css/custom.css"]
     # customJS = ["js/custom.js"]
     gopher = "images/404-gopherize.png" # used in 404 template ( Generator: https://gopherize.me )
