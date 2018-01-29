@@ -4,6 +4,7 @@ date: 2017-01-24T16:26:59+01:00
 authors: ["djlechuck"]
 tags: ["express", "flux", "react"]
 categories: ["veille-et-tests"]
+toc: true
 ---
 
 ## Avant-propos

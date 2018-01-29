@@ -4,6 +4,7 @@ date: 2017-01-05T07:40:54+01:00
 authors: ["djlechuck"]
 tags: ["api-rest", "aws", "elastic-beanstalk", "swagger"]
 categories: ["veille-et-tests"]
+toc: true
 ---
 
 ## Avant-propos
