@@ -1,5 +1,5 @@
 baseURL = "https://www.djlechuck.fr"
-title = "De tout et de rien"
+title = "DjLeChuck • Blog"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
@@ -20,7 +20,7 @@ pygmentsCodefences = true
 defaultContentLanguage = "fr"
 
 [params.info]
-    description = "Ce qui me passe par la tête"
+    description = "Carnet de recherche d'un développeur barbu"
     title404 = "Ici c'est sûr, il n'y a rien !"
 
 [params.assets]
