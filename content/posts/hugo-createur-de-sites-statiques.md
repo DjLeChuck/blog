@@ -15,7 +15,7 @@ personnalise en fonction de critères.
 
 Par exemple, un site de vente qui propose un espace client avec un catalogue et
 un panier d'achat sera considéré comme un site dynamique car une partie des
-pages qu'un utilisateur verra ne seront pas les mêmes que celles qu'un autre
+pages qu'un utilisateur verra ne sera pas les mêmes que celles qu'un autre
 verra à son tour. À l'inverse, ce site par exemple qui n'est composé que de
 billets et pages satellites qui n'ont pas d'affichage dynamique en fonction de
 qui les consultera (à l'exception du système de commentaires en bas de
@@ -36,22 +36,22 @@ par exemple :
 
 [et pleins d'autres](https://www.staticgen.com/).
 
-## Hugo comment ça marche ?
+## Hugo, comment ça marche ?
 
 Hugo est un outil écrit en [Go](https://fr.wikipedia.org/wiki/Go_(langage)) qui
 s'utilise depuis un terminal pour générer au final un site statique. Il se base
 sur plusieurs choses :
 
-* Des fichiers écrits en [Markdown](https://fr.wikipedia.org/wiki/Markdown)
-pour le contenu des billets,
+* des fichiers écrits en [Markdown](https://fr.wikipedia.org/wiki/Markdown)
+pour le contenu des billets ;
 * des fichiers TOML, YAML ou JSON pour configurer certaines parties des billets / du
-site,
+site ;
 * des fichiers de tout autre type (HTML, CSS, JS, etc.) pour gérer le thème
 du site et ces assets.
 
 **Tout ce que je vais décrire à partir de maintenant restera assez succint et
 ne reflètera pas toute la puissance d'Hugo. La documentation du site est très
-bien faîte et complète, il ne fau tpas hésiter à aller la voir aussi souvent
+bien faite et complète, il ne faut pas hésiter à aller la voir aussi souvent
 que possible !**
 
 ### Installation
@@ -61,7 +61,7 @@ simple comme on peut le voir [sur la page du site](https://gohugo.io/getting-sta
 
 Le plus simple reste encore de télécharger le binaire de la dernière version
 disponible directement sur leur [GitHub](https://github.com/gohugoio/hugo/releases)
-afin de garantir l'utilisation d'un outil à jour car les systèmes de paquet ne
+afin de garantir l'utilisation d'un outil à jour car les systèmes de paquets ne
 proposent pas toujours une version à jour.
 
 ### Création d'un projet et structure de base
@@ -93,29 +93,29 @@ mon_blog/
 Voici un résumé du rôle de chaque répertoires / fichiers :
 
 * [archetypes](https://gohugo.io/content-management/archetypes/#readout) :
-les gabarits de pages que nous allons créer
-* archetypes/default.md : le gabarit de base de toute les pages
+les gabarits de pages que nous allons créer ;
+* archetypes/default.md : le gabarit de base de toutes les pages ;
 * [config.toml]((https://gohugo.io/getting-started/configuration/#toml-configuration)) :
-le fichier de configuration pincipal du site qui permettra de gérer tout un tas
-de choses.
+le fichier de configuration principal du site qui permettra de gérer tout un tas
+de choses ;
 * [content](https://gohugo.io/content-management/organization/) : le contenu
 du site, c'est-à-dire les différentes pages créées, les différentes ressources
-les concernant, etc.
+les concernant, etc. ;
 * [data](https://gohugo.io/templates/data-templates/#the-data-folder) : un
 ensemble de fichiers permettant de gérer des données qui ne seront pas des
-pages à proprement parler. Par exemple stocker les informations à propose de
+pages à proprement parler. Par exemple stocker les informations à propos de
 l'auteur d'un billet et pouvoir le référencer ensuite dans une page sans avoir
-besoin de dupliquer à chaque fois toutes les informations le concernant.
+besoin de dupliquer à chaque fois toutes les informations le concernant ;
 * [layouts](https://gohugo.io/themes/creating/#layouts) : permet de surcharger
-le design établi par le thème du site.
+le design établi par le thème du site ;
 * static : l'ensemble des fichiers statiques du site comme les images, les
-fichiers JS / CSS, etc.
+fichiers JS / CSS, etc ;
 * [themes](https://gohugo.io/themes/) : l'ensemble des thèmes installés, même
 si un seul sera actif à la fois via la configuration (le fichier `config.toml`).
 
 Il existe beaucoup de thèmes créés par la communauté qui peuvent être installés
 facilement. Cela permet de partir sur un design déjà existant et l'utiliser tel
-quel ou bien de le modifier en le surchargeant grâce au dossier `layouts`.
+quel ou bien le modifier en le surchargeant grâce au dossier `layouts`.
 La gallerie des thèmes [se trouve ici](https://themes.gohugo.io/) et les
 explications sur comment en installer un
 [sont là](https://gohugo.io/getting-started/quick-start/#step-3-add-a-theme).
@@ -167,7 +167,7 @@ draft: true
 
 On voit que le `title` sera composé du nom du fichier auquel on remplacera les
 tirets `-` par un espace et que la casse sera changée en titre (une majuscule à
-chaque nouveau mot) ; La date sera automatiquement renseignée par celle de
+chaque nouveau mot), la date sera automatiquement renseignée par celle de
 l'exécution de la commande et un paramètre supplémentaire `draft: true` sera
 ajouté tel quel.
 
@@ -177,7 +177,7 @@ page pour nous.
 
 #### Anatomie d'un fichier
 
-Toute la première partie d'un fichier, ce qui se trouve entre les tirets `---`
+Toute la première partie d'un fichier, ce qui se trouve entre les tirets `---`,
 s'appelle le [Front Matter](https://gohugo.io/content-management/front-matter/#readout).
 Il s'agit de meta-données écrites par défaut en YAML (mais qui peuvent être
 en TOML ou en JSON) qui seront analysées par Hugo et qui permettent de
@@ -221,7 +221,7 @@ paramètre `draft: true` dans leur Front Matter. Le serveur sera lancé et le
 site accessible via l'URL http://127.0.0.1:1313/.
 
 Par défaut Hugo est en mode `watch`, ce qui signifie que tout changement qui
-intervient dans un des dossiers `content` ,`data`, `layouts` ou `static`
+intervient dans un des dossiers `content`, `data`, `layouts` ou `static`
 déclenchera une nouvelle compilation de code de sa part et la page se
 rechargera automatiquement pour voir les changements apparaître.
 
@@ -235,7 +235,7 @@ suivante :
 hugo
 ```
 
-Simple n'est-ce pas ? Hugo va interpréter le Markdown des pages crées, exécuter
+Simple n'est-ce pas ? Hugo va interpréter le Markdown des pages créées, exécuter
 les shortcodes etc. afin que toutes les pages soient transformées et fichiers
 statiques HTML ou XML. Par défaut, tout le contenu sera généré dans un dossier
 `public` et prêt à l'emploi ! Il suffira d'envoyer tout le contenu de ce
@@ -247,9 +247,9 @@ faire d'autre.
 Il y a encore tant de choses à dire sur Hugo et ses capacités que je ferais
 peut-être des posts plus spécialisés dans certaines parties de son
 fonctionnement. Dans tous les cas, la documentation reste une alliée de taille
-pour appréhender les différentes possibilitées de l'outil.
+pour appréhender les différentes possibilités de l'outil.
 
-Je conseil également de regarder les vidéos
+Je conseille également de regarder les vidéos
 [YouTube](https://www.youtube.com/watch?v=qtIqKaDlqXo&list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3)
 proposées par
 [Giraffe Academy](http://www.giraffeacademy.com/) qui permettent de balayer
