@@ -16,6 +16,8 @@ enableRobotsTXT = true # generate robots.txt
 # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
 pygmentsCodefences = true
 
+enableEmoji = true
+
 # Missing translations will default to this content language
 defaultContentLanguage = "fr"
 
@@ -41,10 +43,16 @@ defaultContentLanguage = "fr"
     listDateFormat = "02 Jan 2006"
     hideEntryNavigation = ["page"] # boolean / array of sections
     recentPostsLength = 4
-    hideSocialMenu = false
     showReadingTime = false
-    noTermCloudShuffle = false
-    homepageSections = ["recent_posts", "tags"]
+    taxonomyCloudShuffle = true
+
+[params.sidebar]
+    enable = true
+
+[params.widgets]
+    homepage = ["recent_posts", "taxonomy_cloud"]
+    sidebar = ["about"]
+    footer = ["social_menu"]
 
 [params.opengraph.facebook]
     admins = [] # array of Facebook IDs
