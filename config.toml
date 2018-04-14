@@ -21,6 +21,9 @@ enableEmoji = true
 # Missing translations will default to this content language
 defaultContentLanguage = "fr"
 
+[params.comments]
+    enable = true
+
 [params.info]
     description = "Carnet de recherche d'un développeur barbu"
     title404 = "Ici c'est sûr, il n'y a rien !"
